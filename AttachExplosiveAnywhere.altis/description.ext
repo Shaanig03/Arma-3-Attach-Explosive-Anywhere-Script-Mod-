@@ -1,0 +1,46 @@
+//--------------------------------------------------- script code
+// activating the script 
+// define CfgFunctions in description.ext and define the EAA functions by #including them like this
+// note if you have CfgFunctions already defined then copy "#include "EAA\fncs.sqf" to your CfgFunctions
+// note: settings/config file is located in EAA\Fncs\fn_config.sqf
+
+class CfgFunctions 
+{
+
+	#include "EAA\fncs.sqf"
+	
+};
+
+// define CfgSounds in description.ext and #includes the explosive plant sound 
+// note if you have CfgSounds already defined then copy "#include "EAA\fncs.sqf" to your CfgSounds
+class CfgSounds
+{
+	sounds[] = {}; // OFP required it filled, now it can be empty or absent depending on the game's version
+
+	#include "EAA\sounds.sqf"
+	
+};
+
+// after setting CfgFunctions and CfgSounds, copy in the "EAA" folder to your mission directory and your good to -> go ^_^, 
+// P.S: do try to reload your mission after making changes
+//--------------------------------------------------- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// below code is not needed (optional)
+//----------------------------
+// respawn ( 
+respawn = "BASE";
+respawnDelay = 1;
+disabledAI = 1;	
+enableDebugConsole = 2;
